@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matrix-Login</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">
+            Login
+          </button>
+          <button type="button" class="toggle-btn" onclick="register()">
+            Register
+          </button>
+        </div>
+        <div>
+          <form id="login" class="input-group">
+            <label for="" class="">User Id</label>
+            <input type="text" class="input-field" required />
+            <label type="Password">Password</label>
+            <input type="Password" class="input-field" required />
+            <input type="checkbox" class="check-box" />
+            <span> Remember Password </span>
+            <button type="sumbit" class="sumbit-btn">Login</button>
+          </form>
+          <form id="register" class="input-group">
+            <label for="email">Email Id</label>
+            <input type="email" class="input-field" required autofocus />
+            <label for="Password">Enter Password</label>
+            <input type="password" class="input-field" />
+            <input type="checkbox" class="check-box" />
+            <span class="spn"> I agree to the terms & conditions </span>
+
+            <button type="sumbit" class="sumbit-btn">Register</button>
+            <div>
+              <button class="button2">Sign in with Facebook</button>
+              <button class="button3">Sigin in with instagram</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      var x = document.getElementById("login");
+      var y = document.getElementById("register");
+      var z = document.getElementById("btn");
+
+      function register() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+      }
+      function login() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+      }
+    </script>
+  </body>
+</html>
